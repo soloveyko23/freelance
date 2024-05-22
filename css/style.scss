@@ -1,0 +1,17 @@
+$tablet: 991.98px; // Планшети, деякі телефони в горизонтальному положенні
+$mobile: 767.98px; // Телефони L
+$mobileSmall: 479.98px; // Телефони S
+
+@import url('variables.css');
+@import url('common.css');
+@import url('base.css');
+
+@import url('components/header.css');
+@import url('components/hero.css');
+@import url('components/organizations.css');
+@import url('components/subscriptions.css');
+@import url('components/solutions.css');
+@import url('components/how-doit.css');
+@import url('components/helps.css');
+@import url('components/want-to-help.css');
+@import url('components/footer.css');

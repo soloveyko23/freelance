@@ -1,0 +1,52 @@
+$tablet: 991.98px; // Планшети, деякі телефони в горизонтальному положенні
+$mobile: 767.98px; // Телефони L
+$mobileSmall: 479.98px; // Телефони S
+
+.organizations {
+  @media (min-width:$mobile){
+    padding-top: 4.375rem;
+    padding-bottom: 5.125rem; 
+  }
+  @media (max-width:$mobile){
+     padding: 2.5rem 0; 
+  }
+  &__content {
+    @media (min-width:$mobile){
+      border-top: 1px solid rgba(20, 70, 65, 0.34);
+      padding-top: 2.5rem; 
+    }
+    p {
+      color: var(--mainColor);
+
+      font-weight: 400;
+      line-height: 28px;
+      letter-spacing: 0.2px;
+      @media (min-width:$tablet){
+        font-size: 1.25rem;
+         margin-bottom: 4.5rem; 
+      }
+      @media (max-width:$tablet){
+        font-size: 1rem;
+        margin-bottom: 2rem;
+      }
+    }
+    ul {
+    
+      align-items: center;
+      justify-content: center;
+      gap: 3.375rem;
+      @media (min-width:$mobile){
+        display: flex;      
+      }
+      @media (max-width:$mobile){
+         display: grid;
+         grid-template-columns: repeat(2, 1fr); 
+         li {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+         }
+      }
+    }
+  }
+}

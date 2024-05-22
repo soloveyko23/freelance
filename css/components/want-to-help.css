@@ -1,0 +1,71 @@
+.want-to-help {
+  background-color: rgb(150, 201, 233);
+}
+@media (min-width: 767.98px) {
+  .want-to-help {
+    padding: 6.875rem 0 1.125rem 0;
+  }
+}
+@media (max-width: 767.98px) {
+  .want-to-help {
+    padding: 3.125rem 0;
+  }
+}
+.want-to-help__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 767.98px) {
+  .want-to-help__body {
+    max-width: 46.875rem;
+    text-align: center;
+  }
+}
+.want-to-help__title {
+  margin-bottom: 1.875rem;
+}
+.want-to-help__description {
+  color: var(--mainColor);
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+}
+@media (min-width: 767.98px) {
+  .want-to-help__description {
+    margin-bottom: 2.75rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .want-to-help__description {
+    margin-bottom: 1.5rem;
+  }
+}
+.want-to-help .button {
+  justify-content: center;
+}
+@media (min-width: 479.98px) {
+  .want-to-help .button {
+    min-width: 21.25rem;
+  }
+}
+@media (min-width: 767.98px) {
+  .want-to-help .button {
+    font-size: 1.625rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .want-to-help .button {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 479.98px) {
+  .want-to-help .button {
+    width: 100%;
+  }
+}
+.want-to-help .button i svg {
+  width: 24px;
+  height: 20px;
+}/*# sourceMappingURL=want-to-help.css.map */
