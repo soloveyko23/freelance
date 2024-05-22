@@ -1,0 +1,28 @@
+$tablet: 991.98px; // Планшети, деякі телефони в горизонтальному положенні
+$mobile: 767.98px; // Телефони L
+$mobileSmall: 479.98px; // Телефони S
+
+.organizations {
+  padding-top: 4.375rem;
+  padding-bottom: 5.125rem;
+  &__content {
+    border-top: 1px solid rgba(20, 70, 65, 0.34);
+    padding-top: 2.5rem;
+    p {
+      color: var(--mainColor);
+      font-size: 1.25rem;
+      font-weight: 400;
+      line-height: 28px;
+      letter-spacing: 0.2px;
+      @media (min-width:$tablet){
+         margin-bottom: 4.5rem; 
+      }
+    }
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 3.375rem;
+    }
+  }
+}

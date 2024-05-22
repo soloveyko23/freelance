@@ -1,0 +1,122 @@
+$tablet: 991.98px; // Планшети, деякі телефони в горизонтальному положенні
+$mobile: 767.98px; // Телефони L
+$mobileSmall: 479.98px; // Телефони S
+
+.solutions {
+  padding-bottom: 5rem;
+  &__header {
+    margin-bottom: 2.875rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .subheading {
+      margin-bottom: 1.875rem;
+    }
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+  &__title {
+    max-width: 43rem;
+    text-align: center;
+  }
+  &__card {
+    transition: all 0.3s;
+    &:hover{
+      transform: translateY(-0.3125rem);
+    }
+    &.card-one {
+      background-color: rgb(150, 201, 233);
+      .card {
+        &__footer {
+          border-top: 1px solid #276B65;
+        }
+      }
+    }
+    &.card-two {
+      background-color: var(--mainColor);
+      color: rgb(207, 212, 216);
+      .card {
+        &__footer {
+          border-top: 1px solid rgb(39, 107, 101);
+          p {
+            color: rgb(207, 212, 216);
+          }
+        }
+      }
+    }
+    .card {
+  
+      &__content {
+        @media (min-width:$tablet){
+           padding: 7.5rem 2.5rem 3.5rem 2.5rem; 
+        }
+        @media (max-width:$tablet){
+          padding: 5rem 2rem 2.5rem 2rem;
+        }
+      }
+      &__description {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        p {
+          max-width: 23.125rem;
+          text-align: center;
+        }
+      }
+      &__footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media (min-width:$mobile){
+           padding: 2.1875rem 1.25rem 1.625rem 1.25rem; 
+        }
+        p {
+          max-width: 17.5rem;
+          text-align: center;
+          color: rgb(19, 74, 69);
+          @media (min-width:$mobile){
+            font-size: 1.0625rem; 
+          }
+          @media (max-width:$mobile){
+            font-size: .9375rem; 
+          }
+          font-weight: 400;
+          line-height: 28px;
+          letter-spacing: 0.2px;
+          text-align: center;
+        }
+      }
+      &__icon {
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        @media (min-width:$mobile){
+           margin-bottom: 2.75rem; 
+           min-height: 16.875rem;
+        }
+        @media (max-width:$mobile){
+           margin-bottom: 1.75rem; 
+        }
+      }
+      &__title {
+        @media (min-width:$mobile){
+           font-size: 2.5rem; 
+           margin-bottom: 2rem;
+        }
+        @media (max-width:$mobile){
+           font-size: 1.75rem; 
+           margin-bottom: 1.5rem;
+        }
+        font-weight: 400;
+        line-height: 40px;
+        letter-spacing: 0.2px;
+        text-align: center;
+      }
+    }
+  }
+}

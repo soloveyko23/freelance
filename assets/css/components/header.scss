@@ -1,0 +1,40 @@
+.header {
+  margin-top: 1.5rem;
+
+  &__content {
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.09);
+    background-color: rgb(255, 255, 255);
+    min-height: 5rem;
+    padding: .875rem
+     1.875rem;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     gap: 1rem 1.875rem;
+  }
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem 1.875rem;
+    justify-content: flex-end;
+    min-width: 13.125rem;
+  }
+  &__menu {
+    @media (min-width:991.98px){
+      padding-left: 7rem; 
+    }
+    .menu {
+      &__list {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem 1.875rem;
+      }
+    }
+  }
+}
+
+.icon-menu {
+  display: none;
+}

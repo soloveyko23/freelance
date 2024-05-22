@@ -1,0 +1,59 @@
+@media (min-width: 767.98px) {
+  .how-doit {
+    padding: 6.25rem 0;
+  }
+}
+@media (max-width: 767.98px) {
+  .how-doit {
+    padding: 3.125rem 0;
+  }
+}
+.how-doit__content {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (min-width: 767.98px) {
+  .how-doit__info {
+    max-width: 28.875rem;
+  }
+}
+.how-doit__image img {
+  max-width: 34.375rem;
+  width: 1005px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (min-width: 767.98px) {
+  .how-doit__description p {
+    margin-bottom: 1.5rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .how-doit__description p {
+    margin-bottom: 1rem;
+  }
+}
+.how-doit__description p:last-child {
+  margin-bottom: 0;
+}
+@media (min-width: 991.98px) {
+  .how-doit .subheading {
+    margin-bottom: 1.875rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .how-doit .subheading {
+    margin-bottom: 1.125rem;
+  }
+}
+@media (min-width: 767.98px) {
+  .how-doit__title {
+    margin-bottom: 2.1875rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .how-doit__title {
+    margin-bottom: 1.25rem;
+  }
+}/*# sourceMappingURL=how-doit.css.map */
