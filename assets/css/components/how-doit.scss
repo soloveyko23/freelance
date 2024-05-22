@@ -13,7 +13,13 @@ $mobileSmall: 479.98px; // Телефони S
   &__content {
     display: grid;
     align-items: center;
-    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    @media (min-width:$mobile){
+      grid-template-columns: repeat(2, 1fr); 
+    }
+    @media (max-width:$mobile){
+       grid-template-columns: 1fr; 
+    }
 
   }
   &__info {
@@ -22,9 +28,12 @@ $mobileSmall: 479.98px; // Телефони S
     }
   }
   &__image {
+    @media (max-width:$mobile){
+       margin: 0 auto; 
+    }
     img {
       max-width: 34.375rem;
-      width: 1005px;
+      width: 100%;
       object-fit: cover;
     }
   }

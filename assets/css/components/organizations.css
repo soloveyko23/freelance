@@ -1,26 +1,56 @@
-.organizations {
-  padding-top: 4.375rem;
-  padding-bottom: 5.125rem;
+@media (min-width: 767.98px) {
+  .organizations {
+    padding-top: 4.375rem;
+    padding-bottom: 5.125rem;
+  }
 }
-.organizations__content {
-  border-top: 1px solid rgba(20, 70, 65, 0.34);
-  padding-top: 2.5rem;
+@media (max-width: 767.98px) {
+  .organizations {
+    padding: 2.5rem 0;
+  }
+}
+@media (min-width: 767.98px) {
+  .organizations__content {
+    border-top: 1px solid rgba(20, 70, 65, 0.34);
+    padding-top: 2.5rem;
+  }
 }
 .organizations__content p {
   color: var(--mainColor);
-  font-size: 1.25rem;
   font-weight: 400;
   line-height: 28px;
   letter-spacing: 0.2px;
 }
 @media (min-width: 991.98px) {
   .organizations__content p {
+    font-size: 1.25rem;
     margin-bottom: 4.5rem;
   }
 }
+@media (max-width: 991.98px) {
+  .organizations__content p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+}
 .organizations__content ul {
-  display: flex;
   align-items: center;
   justify-content: center;
   gap: 3.375rem;
+}
+@media (min-width: 767.98px) {
+  .organizations__content ul {
+    display: flex;
+  }
+}
+@media (max-width: 767.98px) {
+  .organizations__content ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .organizations__content ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }/*# sourceMappingURL=organizations.css.map */

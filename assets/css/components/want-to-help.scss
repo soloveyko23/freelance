@@ -8,6 +8,9 @@ $mobileSmall: 479.98px; // Телефони S
   @media (min-width:$mobile){
      padding: 6.875rem 0 1.125rem 0; 
   }
+  @media (max-width:$mobile){
+     padding: 3.125rem 0; 
+  }
   &__content {
    display: flex;
    align-items: center;
@@ -45,6 +48,9 @@ $mobileSmall: 479.98px; // Телефони S
     }
     @media (max-width:$mobile){
        font-size: 1.25rem; 
+    }
+    @media (max-width:$mobileSmall){
+       width: 100%; 
     }
     i {
       svg {

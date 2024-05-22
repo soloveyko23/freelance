@@ -24,10 +24,28 @@ $mobileSmall: 479.98px; // Телефони S
   &__body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2.625rem;
+    @media (min-width:$tablet){
+      gap: 2.625rem; 
+    }
+    @media (max-width:$tablet){
+      gap: 1.25rem;
+      overflow: auto;
+      gap: 1rem;
+      margin-right: -1rem;
+      padding-right: 1rem;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
   }
   &__card {
     position: relative;
+    @media (max-width:$tablet){
+      min-width: 18.75rem;
+    }
+    @media (max-width:$mobileSmall){
+       min-width: 85vw; 
+    }
     @media (min-width:$mobile){
        padding: 2.5rem 1.25rem; 
        min-height: 32.8125rem;

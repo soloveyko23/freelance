@@ -24,10 +24,36 @@
 .helps__body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2.625rem;
+}
+@media (min-width: 991.98px) {
+  .helps__body {
+    gap: 2.625rem;
+  }
+}
+@media (max-width: 991.98px) {
+  .helps__body {
+    gap: 1.25rem;
+    overflow: auto;
+    gap: 1rem;
+    margin-right: -1rem;
+    padding-right: 1rem;
+  }
+  .helps__body::-webkit-scrollbar {
+    display: none;
+  }
 }
 .helps__card {
   position: relative;
+}
+@media (max-width: 991.98px) {
+  .helps__card {
+    min-width: 18.75rem;
+  }
+}
+@media (max-width: 479.98px) {
+  .helps__card {
+    min-width: 85vw;
+  }
 }
 @media (min-width: 767.98px) {
   .helps__card {

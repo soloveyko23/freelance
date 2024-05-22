@@ -6,6 +6,11 @@
     padding: 6.875rem 0 1.125rem 0;
   }
 }
+@media (max-width: 767.98px) {
+  .want-to-help {
+    padding: 3.125rem 0;
+  }
+}
 .want-to-help__content {
   display: flex;
   align-items: center;
@@ -53,6 +58,11 @@
 @media (max-width: 767.98px) {
   .want-to-help .button {
     font-size: 1.25rem;
+  }
+}
+@media (max-width: 479.98px) {
+  .want-to-help .button {
+    width: 100%;
   }
 }
 .want-to-help .button i svg {

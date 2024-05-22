@@ -105,6 +105,30 @@ $mobileSmall: 479.98px; // Телефони S
       background-color: darken(#134A45, $amount: 7);
     }
   }
+  &.button-pink {
+    background-color: var(--pink);
+    color: #fff;
+    transition: all 0.3s;
+    &.button-with-arrow {
+      svg path {
+        fill: #fff;
+      }
+    }
+    &:hover{
+      background-color: darken(#B961CD, $amount: 5);
+      color: #fff;
+      &.button-with-arrow {
+        i {
+          svg path{
+            fill: #fff;
+          }
+        }
+      }
+    }
+    &:active{
+      background-color: darken(#B961CD, $amount: 7);
+    }
+  }
 }
 
 .link-menu {
@@ -135,22 +159,50 @@ $mobileSmall: 479.98px; // Телефони S
       }
     }
   }
+  &--gray {
+    transition: color 0.3s;
+    color: rgba(203, 208, 213, 0.73);
+    &::before{
+      content:'';
+      background-color: rgba(203, 208, 213, 0.73);
+    }
+    &:hover{
+      &::before{
+        width: 100%;
+      }
+    }
+  }
 }
 
 .title-h1 {
   color: var(--mainColor);
-  font-size: 3.9375rem;
+
   font-weight: 400;
-  line-height: 73px;
-  letter-spacing: 2px;
+
+  @media (min-width:$mobileSmall){
+    font-size: 3.9375rem;
+    line-height: 1.2;
+    letter-spacing: 2px;      
+  }
+  @media (max-width:$mobileSmall){
+     font-size: 2.5rem; 
+  }
 }
 
 .title-h2 {
   color: var(--mainColor);
-  font-size: 3rem;
+
   font-weight: 400;
   line-height: 1.3;
-  letter-spacing: 0.6px;
+  @media (min-width:$mobileSmall){
+    font-size: 3rem; 
+  }
+  @media (max-width:$mobile){
+     font-size: 2rem; 
+  }
+  @media (min-width:$mobileSmall){
+    letter-spacing: 0.6px; 
+  }
 }
 
 .subheading {
@@ -190,5 +242,11 @@ $mobileSmall: 479.98px; // Телефони S
   }
   @media (max-width:$mobile){
      font-size: .9375rem; 
+  }
+}
+
+.lock {
+  body {
+    overflow: hidden;
   }
 }
